@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ifeq ($(HAVE_FSL_IMX_GPU3D),true)
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -28,3 +29,4 @@ LOCAL_SDK_VERSION := 17
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include $(BUILD_PACKAGE)
+endif
